@@ -1,15 +1,22 @@
-
+const {ComputerPlayer} = require('./ComputerPlayer.js')
 class Board{
- constructor(){
-    this.board = new Array(6).fill("_")
-    }
-    disPlayBoard(length){
-        return this.board.join(" ")
-    }
+
+ constructor(length){
+
+    this.board = new Array(length).fill("_")
+    
 
     }
-let game = new Board()
-console.log(game.disPlayBoard("_"))
+    // displayBoard(length){
+    //     return this.board.join(" ")
+    // }
+  
+    }
+
+
+module.exports = Board
+
 
 
 // add placemark symbol
+// moves remaining
