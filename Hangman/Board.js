@@ -7,9 +7,11 @@ class Board{
     
 
     }
-    // displayBoard(length){
-    //     return this.board.join(" ")
-    // }
+    addChar(arr, char){
+        for (let i = 0; i < arr.length; i++){
+            this.board[i] = char 
+        }
+    }
   
     }
 
